@@ -1,4 +1,4 @@
-import {message, wan, danger} from "danger"
+import { message, wan, danger } from "danger"
 
 
 if (danger.git.modified_files.includes("package.json") {
