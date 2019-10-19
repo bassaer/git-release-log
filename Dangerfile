@@ -1,11 +1,11 @@
+repo = URI.parse('https://raw.githubusercontent.com/bassaer/git-release-log/master/package.json')
+
 if git.modified_files.include? "package.json" then
     pkg_jsn = git.modified_files.select { |path| path.include? "package.json" }
-    pr_ver = open(pkg_jsn[0]) { |f| JSON.load(f) }
-    warn("PR version is #{pr_ver['version']}")
-    diff = git.diff_for_file("package.json")
-    if diff && diff.patch =~ "version"
-        warn 'diff \n#{diff}'
-    end
+    master = Net::HTTP.get(repo)
+    cur_ver = JSON.load(master)['version']
+    new_ver = open(pkg_jsn[0]) { |f| JSON.load(f)['version'] }
+    markdown "```#{cur_ver}``` -> ```#{new_ver}```"
 end
 
 warn("package.json was not updated.")
