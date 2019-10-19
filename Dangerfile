@@ -12,4 +12,4 @@ if git.modified_files.include? "package.json" then
     end
 end
 
-warn("package.json was not updated.")
+warn("```package.json``` was not updated.")
