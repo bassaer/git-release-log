@@ -1,3 +1,20 @@
 {
-    "version": "1.0.0"
+  "name": "git-release-log",
+  "version": "1.0.0",
+  "description": "``` ❯ ./changelog.sh -v 1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bassaer/git-release-log.git"
+  },
+  "keywords": [],
+  "author": "Tsubasa Nakayama <app.nakayama@gmail.com> (https://bassaer.github.io/me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bassaer/git-release-log/issues"
+  },
+  "homepage": "https://github.com/bassaer/git-release-log#readme"
 }
