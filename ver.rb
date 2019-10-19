@@ -1,7 +1,5 @@
 require 'json'
 
-result = open("package.json") do |f|
-    JSON.load(f)
-end
+result = open("package.json") { |f| JSON.load(f) }
 
 p result['version']
