@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/bassaer/git-release-log/issues"
   },
-  "homepage": "https://github.com/bassaer/git-release-log#readme"
+  "homepage": "https://github.com/bassaer/git-release-log#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "danger": "^9.2.2",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
 }
