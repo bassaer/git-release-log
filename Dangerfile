@@ -3,7 +3,9 @@ if git.modified_files.include? "package.json" then
     if pkg_jsn.length == 1
         pr_ver = open(pkg_jsn[0]) { |f| JSON.load(f) }
         warn("PR version is #{pr_ver['version']}")
+        exit 0
+    end
 end
 
-
 warn("package.json was not updated.")
+
