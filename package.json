@@ -4,6 +4,7 @@
   "description": "release log",
   "main": "index.js",
   "scripts": {
+    "dev": "echo ok",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
