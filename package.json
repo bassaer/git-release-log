@@ -1,7 +1,7 @@
 {
   "name": "git-release-log",
-  "version": "1.0.0",
-  "description": "``` ❯ ./changelog.sh -v 1.0.0",
+  "version": "1.1.0",
+  "description": "release log",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
